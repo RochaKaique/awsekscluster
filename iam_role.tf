@@ -35,8 +35,8 @@ POLICY
 }
 
 resource "aws_iam_policy" "autoscaler" {
-    name = "eks-autoscaler-policy"
-    policy = <<FILE
+  name   = "eks-autoscaler-policy"
+  policy = <<FILE
 {
   "Version": "2012-10-17",
   "Statement": [

@@ -1,7 +1,7 @@
 resource "aws_vpc" "kaiquelab_vpc" {
-    cidr_block = "10.0.0.0/16"
+  cidr_block = "10.0.0.0/16"
 
-    tags = {
-      Name = "Kaique Lab VPC"
-    }
+  tags = {
+    Name = "Kaique Lab VPC"
+  }
 }
