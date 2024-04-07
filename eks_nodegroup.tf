@@ -1,5 +1,5 @@
 resource "aws_instance" "bastion" {
-  ami                         = "ami-0000456e99b2b6a9"
+  ami                         = "ami-0900fe555666598a2"
   key_name                    = aws_key_pair.tf_key.key_name
   instance_type               = "t2.micro"
   associate_public_ip_address = true
@@ -45,7 +45,7 @@ resource "aws_eks_node_group" "node-grp" {
 
 resource "aws_key_pair" "tf_key" {
   key_name   = "labkaiquekey"
-  public_key = file("./labkaiquekey")
+  public_key = file("./labkaiquekey.pub")
 }
 
 

@@ -1,7 +1,7 @@
 resource "aws_security_group" "allow-tls" {
   name        = "allow-tls"
   description = "Permite acesso TLS na porta 22"
-
+  vpc_id = aws_vpc.kaiquelab_vpc.id
   ingress {
     description = "TLS para VPC"
     from_port   = 22
